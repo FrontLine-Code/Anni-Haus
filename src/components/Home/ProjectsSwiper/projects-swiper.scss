@@ -1,0 +1,74 @@
+@import "../../../styles/variable";
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  margin-top: 96px;
+}
+
+.projects__swiper {
+  position: relative;
+}
+
+.projects__slide {
+  position: relative;
+}
+
+.projects__text {
+  position: absolute;
+  bottom: 10px;
+  left: 40px;
+  font-size: 16px;
+  color: $white;
+  max-width: 250px;
+  width: 100%;
+  text-align: left;
+}
+
+.projects__title {
+  max-width: 400px;
+  width: 100%;
+}
+
+.projects__slide img {
+  width: 284px;
+  height: 414px;
+  border-radius: 8px;
+}
+
+.projects__button {
+  position: absolute;
+  top: 44%;
+  width: 54px;
+  height: 54px;
+  z-index: 10;
+  color: $dark;
+  background-color: $white;
+  border-radius: 50%;
+  display: block;
+  box-shadow: -1px 0px 33px -4px rgba(168, 168, 168, 0.42);
+
+  &:hover {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.projects__button--next {
+  right: -0%;
+}
+
+.projects__button--prev {
+  left: -0%;
+}
+
+.projects__button--next:after,
+.projects__button--prev:after {
+  display: none;
+}
+
+.projects__button--prev svg,
+.projects__button--next svg {
+  width: 50%;
+}

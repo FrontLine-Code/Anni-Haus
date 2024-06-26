@@ -1,0 +1,43 @@
+@import "../../styles/variable";
+
+.footer {
+  background-color: $cloud;
+  padding-top: 48px;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid $dark;
+  padding-block: 24px;
+  margin-top: 40px;
+}
+
+.footer__list {
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__link {
+  font-size: 14px;
+  font-weight: 400;
+  color: $dark;
+}
+
+.footer__link--title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.footer__socialmedia {
+  display: flex;
+  gap: 12px;
+}

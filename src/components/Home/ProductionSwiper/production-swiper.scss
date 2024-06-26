@@ -1,0 +1,57 @@
+@import "../../../styles/variable";
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.production__swiper {
+  position: relative;
+}
+
+.production__button {
+  position: absolute;
+  top: 42%;
+  width: 54px;
+  height: 54px;
+  z-index: 10;
+  color: $dark;
+  background-color: $white;
+  border-radius: 50%;
+  display: block;
+  box-shadow: -1px 0px 33px -4px rgba(168, 168, 168, 0.42);
+
+  &:hover {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.production__button--next {
+  right: -2%;
+}
+
+.production__button--prev {
+  left: -2%;
+}
+
+.production__button--next:after,
+.production__button--prev:after {
+  display: none;
+}
+
+.production__button--prev svg,
+.production__button--next svg {
+  width: 50%;
+}

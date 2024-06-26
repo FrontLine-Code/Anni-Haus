@@ -1,0 +1,23 @@
+@import "../../../styles/variable";
+
+.recommend {
+  display: flex;
+  gap: 4px;
+}
+
+.recommend__details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: $asphalt;
+  opacity: 0.8;
+  max-width: 176px;
+  height: auto;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.recommend__types {
+  display: flex;
+  gap: 4px;
+}

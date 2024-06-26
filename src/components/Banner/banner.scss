@@ -1,0 +1,83 @@
+@import "../../styles/variable";
+@import "../../styles/mixins";
+
+.banner {
+  position: relative;
+  margin-block: 16px 56px;
+}
+
+.banner__img {
+  @include adaptive-value(height, 610, 210, 20);
+  object-fit: cover;
+}
+
+.swiper-slide {
+  position: relative;
+  text-align: center;
+  @include font(18, 12, semibold, 1.5);
+  background: $white;
+  @include center;
+}
+
+.banner__info {
+  position: absolute;
+  @include adaptive-value(bottom, 40, 18, 4);
+  @include adaptive-value(left, 40, 18, 4);
+  @include column;
+  align-items: flex-start;
+}
+
+.banner__title {
+  @include font(48, 15, regular, 1.5);
+  text-shadow: 0px 0px 7px rgba(56, 56, 56, 0.35);
+  color: $white;
+}
+
+.banner__subtitle {
+  @include font(16, 12, regular, 1.5);
+  text-shadow: 0px 0px 7px rgba(56, 56, 56, 0.35);
+  color: $white;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner__button {
+  position: absolute;
+  top: 50%;
+  @include adaptive-value(width, 60, 30, 4);
+  @include adaptive-value(height, 60, 30, 4);
+  z-index: 10;
+  color: $dark;
+  background-color: $white;
+  border-radius: 50%;
+  display: block;
+  box-shadow: -1px 0px 33px -4px rgba(168, 168, 168, 0.42);
+  
+  &:hover {
+    @include adaptive-value(width, 65, 35, 4);
+    @include adaptive-value(height, 65, 35, 4);
+  }
+}
+
+.banner__button--next {
+  @include adaptive-value(right, 86, 10, 6);
+}
+
+.banner__button--prev {
+  @include adaptive-value(left, 86, 10, 6);
+}
+
+.banner__button--next:after,
+.banner__button--prev:after {
+  display: none;
+}
+
+.banner__button--prev svg,
+.banner__button--next svg {
+  width: 50%;
+}

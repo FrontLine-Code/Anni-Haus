@@ -1,0 +1,41 @@
+//SVG IMAGES
+export { default as Location } from "./svg/Location";
+export { default as Pinterest } from "./svg/Pinterest";
+export { default as Telegram } from "./svg/Telegram";
+export { default as Vk } from "./svg/Vk";
+export { default as Logo } from "./svg/Logo";
+export { default as Cart } from "./svg/Cart";
+export { default as Search } from "./svg/Search";
+export { default as ChevronLeft } from "./svg/ChevronLeft";
+export { default as ChevronRight } from "./svg/ChevronRight";
+export { default as LongArrow } from "./svg/LongArrow";
+export { default as Percentage } from "./svg/Percentage";
+export { default as FabricType } from "./svg/FabricType";
+export { default as GreenType } from "./svg/GreenType";
+export { default as NightType } from "./svg/NightType";
+export { default as SilverType } from "./svg/SilverType";
+export { default as DrugType } from "./svg/DrugType";
+export { default as NewLable } from "./svg/NewLable";
+export { default as PlayVideo } from "./svg/PlayVideo";
+export { default as Burgermenu } from "./svg/Burgermenu";
+
+//MAIN IMAGES
+export { default as FirstImage } from "./images/category-first.png";
+export { default as SecondImage } from "./images/category-second.png";
+export { default as ThirdImage } from "./images/category-third.png";
+export { default as FourthImage } from "./images/category-fourth.png";
+export { default as FivthImage } from "./images/category-fifth.png";
+export { default as SixthImage } from "./images/category-sixth.png";
+export { default as SeventhImage } from "./images/category-sevnth.png";
+export { default as EighthImage } from "./images/category-eighth.png";
+export { default as NinthImage } from "./images/category-ninth.png";
+export { default as TenthImage } from "./images/category-tenth.png";
+export { default as HeroFirst } from "./images/hero-first.jpg";
+export { default as HeroSecond } from "./images/hero-second.jpg";
+export { default as HeroThird } from "./images/hero-third.jpg";
+export { default as ProductImg } from "./images/product-img.svg";
+export { default as ProductionImg } from "./images/production.svg";
+export { default as InteriorRecommend } from "./images/interior-recommend.svg";
+export { default as ProjectImg } from "./images/projects-slide.jpg";
+export { default as BlogImg } from "./images/blog-slide.jpg";
+export { default as InteriorImg } from "./images/interior-img.jpg";

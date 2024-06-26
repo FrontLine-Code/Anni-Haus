@@ -1,0 +1,145 @@
+@import "../../styles/variable";
+@import "../../styles/mixins";
+
+.header {
+  @include column;
+}
+
+.header__top {
+  @include adaptive-value(padding-block, 16, 8, 4);
+  @include flex(center, space-between);
+  background-color: $milk;
+}
+
+.header__info {
+  @include flex(center, space-between);
+  @include adaptive-value(gap, 40, 10, 4);
+
+  @media (max-width: 500px) {
+    display: none;
+  }
+}
+
+.header__location {
+  @include adaptiveGap(4);
+}
+
+.header__social {
+  display: flex;
+  @include adaptive-value(gap, 12, 6, 4);
+}
+
+.header__bottom {
+  @include flex(center, space-between);
+  @include adaptive-value(padding-block, 24, 8, 4);
+
+  @media (max-width: 680px) {
+    @include flex(center, flex-start);
+  }
+}
+
+.header__logo {
+  & > svg {
+    @include adaptive-value(width, 120, 80, 10);
+  }
+}
+
+.header__list {
+  position: relative;
+  display: flex;
+  @include adaptive-value(gap, 100, 10, 10);
+
+  @media (max-width: 680px) {
+    display: none !important;
+  }
+}
+
+.header__actions {
+  @include flex(center, space-between);
+  @include adaptive-value(gap, 24, 12, 4);
+
+  @media (max-width: 680px) {
+    margin-left: auto;
+  }
+}
+
+.header__btn {
+  & > svg {
+    @include adaptive-value(width, 24, 18, 4);
+    @include adaptive-value(height, 24, 18, 4);
+  }
+}
+
+.header__link {
+  position: relative;
+  @include font(16, 12, regular, 1.5);
+  color: $dark;
+}
+
+.header__modal {
+  position: absolute;
+  top: 250%;
+  left: -5%;
+  background-color: $white;
+  box-shadow: 0px 0px 16px -3px rgba(219, 219, 219, 1);
+  z-index: 2;
+}
+
+.header__link--active::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: $dark;
+  position: absolute;
+  bottom: -20px;
+  left: 0%;
+}
+
+.modal__list {
+  @include column;
+}
+
+.modal__item {
+  padding-block: 18px;
+  padding-inline: 32px;
+  display: flex;
+  gap: 6px;
+
+  &:hover {
+    background-color: $milk;
+  }
+}
+
+.modal__link {
+  color: $dark;
+}
+
+.header__input {
+  @media (max-width: 680px) {
+    display: none !important;
+  }
+
+  & > input {
+    border: 1px solid $paper;
+    font-size: 14px;
+    background-color: $white;
+    color: $dark;
+    border-radius: 50px;
+    @include adaptive-value(width, 1000, 100, 40);
+    @include adaptive-value(padding, 16, 8, 4);
+    @include adaptive-value(padding-inline-start, 45, 35, 5);
+  }
+}
+
+.input__icon {
+  transform: translateX(32px);
+  margin-top: 2px;
+}
+
+.header__burgermenu {
+  display: none;
+
+  @media (max-width: 680px) {
+    display: flex;
+  }
+}
