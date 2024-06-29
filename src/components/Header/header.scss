@@ -31,7 +31,7 @@
 
 .header__bottom {
   @include flex(center, space-between);
-  @include adaptive-value(padding-block, 24, 8, 4);
+  @include adaptive-value(height, 100, 50, 5);
 
   @media (max-width: 680px) {
     @include flex(center, flex-start);

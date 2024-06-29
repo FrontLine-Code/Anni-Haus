@@ -1,8 +1,8 @@
 @import "../../../styles/variable";
+@import "../../../styles/mixins";
 
 .projects {
-  display: flex;
-  flex-direction: column;
+  @include column;
   row-gap: 24px;
   margin-top: 96px;
 }
@@ -13,6 +13,13 @@
 
 .projects__slide {
   position: relative;
+  height: max-content;
+}
+
+.projects__slide img {
+  width: 284px;
+  height: 414px;
+  border-radius: 8px;
 }
 
 .projects__text {
@@ -21,20 +28,12 @@
   left: 40px;
   font-size: 16px;
   color: $white;
-  max-width: 250px;
-  width: 100%;
   text-align: left;
 }
 
 .projects__title {
   max-width: 400px;
   width: 100%;
-}
-
-.projects__slide img {
-  width: 284px;
-  height: 414px;
-  border-radius: 8px;
 }
 
 .projects__button {

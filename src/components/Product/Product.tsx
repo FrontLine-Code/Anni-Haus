@@ -23,13 +23,8 @@ export default function Product() {
       </div>
 
       <div className="product__details">
-        <Text
-          message="Сет из 2 стульев Ginger с мягким сиденьем"
-          color="#3b3b3b"
-          weight={400}
-          size={16}
-        />
-        <Text message="21 990" color="#3b3b3b" weight={500} size={20} />
+        <p className="product__info">Сет из 2 стульев Ginger с мягким сиденьем</p>
+        <p className="product__price">21 990₽</p>
 
         <div className="product__types">
           <GreenType />

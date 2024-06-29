@@ -3,18 +3,19 @@
 
 .banner {
   position: relative;
-  margin-block: 16px 56px;
+  @include adaptive-value(margin-bottom, 56, 24, 6);
 }
 
 .banner__img {
-  @include adaptive-value(height, 610, 210, 20);
   object-fit: cover;
+  @include adaptive-value(height, 725, 410, 10);
 }
 
 .swiper-slide {
+  @include adaptive-value(height, 725, 410, 10);
+  @include font(18, 12, semibold, 1.5);
   position: relative;
   text-align: center;
-  @include font(18, 12, semibold, 1.5);
   background: $white;
   @include center;
 }

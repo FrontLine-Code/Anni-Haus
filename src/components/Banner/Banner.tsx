@@ -109,10 +109,10 @@ export default function Banner() {
           </div>
         </SwiperSlide>
       </Swiper>
-      <button className="banner__button banner__button--next swiper-button-next">
+      <button className="banner__button banner__button--next">
         <ChevronRight />
       </button>
-      <button className="banner__button banner__button--prev swiper-button-prev">
+      <button className="banner__button banner__button--prev">
         <ChevronLeft />
       </button>
     </div>

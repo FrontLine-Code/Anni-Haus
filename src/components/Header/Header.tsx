@@ -83,7 +83,7 @@ export default function Header() {
           <ul
             className="header__list"
             style={
-              isToggled != true ? { display: "none" } : { display: "flex" }
+              isToggled == true ? { display: "none" } : { display: "flex" }
             }
           >
             {links.map((link) => (
@@ -164,7 +164,7 @@ export default function Header() {
           <div
             className="header__input"
             style={
-              isToggled != true ? { display: "flex" } : { display: "none" }
+              isToggled == true ? { display: "flex" } : { display: "none" }
             }
           >
             <button className="input__icon">

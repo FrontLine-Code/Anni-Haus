@@ -36,35 +36,30 @@ export default function Home() {
     <>
       <Header />
       <Banner />
-      {/* <section className="category container">
+      <section className="category container">
         <div className="category__wrapper">
           {blockDetails.map((el) => {
             return (
-              <div key={el.id} className="category__block">
-                <Image src={el.img} alt={el.text} className="category__img" />
-                <p className="category__text">{el.text}</p>
-              </div>
+              <Link href="/" key={el.id}>
+                <div className="category__block">
+                  <Image src={el.img} alt={el.text} className="category__img" />
+                  <p className="category__text">{el.text}</p>
+                </div>
+              </Link>
             );
           })}
           <div className="category__add">
-            <Text
-              message="Покупайте выгодно!"
-              size={40}
-              weight={400}
-              color="#ffffff"
-            />
-            <Text
-              message="Наши специальные предложения"
-              size={16}
-              weight={300}
-              color="#ffffff"
-            />
+            <p className="category__add--title">Покупайте выгодно!</p>
+            <p className="category__add--subtitle">
+              Наши специальные предложения
+            </p>
           </div>
         </div>
       </section>
+
       <section className="newest container">
         <div className="newest__content">
-          <Text message="Новинки" size={40} weight={600} color="#3b3b3b" />
+          <p className="newest__title">Новинки</p>
           <Link href="/" className="product__link">
             Все новинки <IMG.LongArrow />
           </Link>
@@ -77,7 +72,7 @@ export default function Home() {
         </div>
       </section>
       <section className="production container">
-        <Text message="Производство" size={40} weight={600} color="#3b3b3b" />
+        <p className="production__title">Производство</p>
         <div className="production__row">
           <p className="production__letter">
             ANNI HAUS входит в состав холдинга Premier Group – группу торговых и
@@ -241,7 +236,7 @@ export default function Home() {
         </Link>
         <Image src={IMG.InteriorImg} alt="" className="designer__img" />
       </section>
-      <Footer /> */}
+      <Footer />
     </>
   );
 }

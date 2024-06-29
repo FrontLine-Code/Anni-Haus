@@ -1,46 +1,66 @@
 @import "../../styles/variable";
+@import "../../styles/mixins";
 
 .product {
   display: flex;
   flex-direction: column;
-  row-gap: 16px;
+  @include adaptive-value(row-gap, 16, 8, 4);
+  @include adaptive-value(max-width, 300, 120, 10);
 }
 
 .product__image {
-  position: relative;
-  width: max-content;
-  padding-inline: 32px;
-  padding-block: 20px;
+  @include adaptive-value(padding-block, 20, 10, 5);
+  @include center;
   border: 1px solid $granit;
+  width: 100%;
   border-radius: 8px;
+  position: relative;
   cursor: pointer;
 
   &:hover {
     border: 1px solid $dark;
   }
+
+  & > img {
+    @include adaptive-value(width, 195, 95, 10);
+    @include adaptive-value(height, 220, 105, 10);
+  }
+}
+
+.product__info {
+  @include font(16, 12, regular, 1.5);
+  color: $dark;
+}
+
+.product__price {
+  @include font(20, 14, bold, 1.5);
+  color: $dark;
 }
 
 .product__lable {
   position: absolute;
-  top: 16px;
+  top: 4px;
   right: 0px;
+
+  & > svg {
+    @include adaptive-value(width, 56, 32, 6);
+  }
 }
 
 .product__details {
-  max-width: 200px;
-  width: 100%;
   display: flex;
   flex-direction: column;
-  row-gap: 12px;
+  @include adaptive-value(row-gap, 12, 4, 4);
 }
 
 .product__types {
   display: flex;
-  gap: 6px;
+  @include adaptive-value(gap, 6, 2, 2);
 }
 
 .product__link {
   color: $dark;
+  @include font(16, 12, regular, 1.5);
   position: relative;
 
   &::after {

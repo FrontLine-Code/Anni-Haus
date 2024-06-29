@@ -1,33 +1,21 @@
 @import "../../../styles/variable";
+@import "../../../styles/mixins";
 
 .blog {
   margin-top: 96px;
-  display: flex;
-  flex-direction: column;
+  @include column;
   gap: 24px;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .blog__slide {
-  width: 284px !important;
-  display: flex;
-  flex-direction: column;
+  @include column;
   row-gap: 16px;
+  height: max-content;
+  
+  & > img {
+    height: 213px;
+    object-fit: contain;
+  }
 
   & > div {
     text-align: left;
@@ -40,7 +28,7 @@
 
 .blog__button {
   position: absolute;
-  top: 32%;
+  top: 42%;
   width: 54px;
   height: 54px;
   z-index: 10;
